@@ -1,0 +1,6 @@
+.vs
+Village/node_modules
+Village/wwwroot
+Village/package-lock.json
+Village/bin
+Village/obj

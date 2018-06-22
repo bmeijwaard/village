@@ -1,0 +1,74 @@
+﻿{
+  "root": "./",
+  "deployment": {
+    "local": {
+      "path": "build"
+    },
+    "remote": {
+      "host": "YOUR HOST"
+    }
+  },
+  "versioning": {
+    "files": [
+      "./package.json"
+    ]
+  },
+  "dotnet": {
+    "proxy": "https://localhost:44315/",
+    "csproj": "Village.csproj"
+  },
+  "assets": {
+    "css": {
+      "source": [
+        "Assets/css/alien.css",
+        "Assets/css/plugins.css"
+      ],
+      "dest": "wwwroot/css"
+    },
+    "js": {
+      "source": [
+        "Assets/js/alien.js",
+        "Assets/js/plugins.js"
+      ],
+      "dest": "wwwroot/js"
+    },
+    "fonts": {
+      "source": [
+        "Assets/fonts/**/*"
+      ],
+      "dest": "wwwroot/fonts"
+    },
+    "img": {
+      "source": [
+        "Assets/img/**/*"
+      ],
+      "dest": "wwwroot/img"
+    },
+    "clean": [
+      "wwwroot/img",
+      "wwwroot/css",
+      "wwwroot/js",
+      "wwwroot/fonts"
+    ]
+  },
+  "stylesheets": {
+    "base": "Styles/main.scss",
+    "files": "Styles/**/*",
+    "dest": "wwwroot/css"
+  },
+  "javascripts": {
+    "source": "Components/**/*.js",
+    "dest": "wwwroot/js"
+  },
+  "razor": {
+    "source": "Views/**/*.cshtml"
+  },
+  "plugins": {
+    "styles": [
+      ""
+    ],
+    "javascript": [
+      "node_modules/jquery/dist/jquery.min.js"
+    ]
+  }
+}

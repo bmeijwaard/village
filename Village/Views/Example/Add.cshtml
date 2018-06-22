@@ -1,0 +1,26 @@
+﻿@model Village.Models.Example.ExampleViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+<h1>Add</h1>
+<section class="bg-lighter u-PaddingTop100 u-PaddingBottom100">
+    <div class="container">
+        <div class="row u-MarginBottom60">
+            <form method="post">
+                @Html.HiddenFor(m => m.Id)
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input asp-for="Name" type="text" class="form-control form-control--shadow" placeholder="Name..." />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-gradient btn--alien btn-block" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<a asp-action="Index" asp-controller="Home">Home</a>
+<a asp-action="Index" asp-controller="Example">Example Index</a>

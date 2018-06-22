@@ -1,0 +1,849 @@
+﻿@model Village.Models.Example.ExampleViewModel
+@{
+    ViewData["Title"] = "Example";
+}
+<!--header start-->
+<header>
+    <!-- Start Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed navbar-transparent white white--outline bootsnav">
+
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+
+        <div class="container">
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span class="badge">3</span>
+                        </a>
+                        <ul class="dropdown-menu cart-list">
+                            <li>
+                                <a href="#" class="photo"><img src="~/img/cart-1.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Delica omtantur </a></h6>
+                                <p>2x - <span class="price">$99.99</span></p>
+                            </li>
+                            <li>
+                                <a href="#" class="photo"><img src="~/img/cart-2.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Omnes ocurreret</a></h6>
+                                <p>1x - <span class="price">$33.33</span></p>
+                            </li>
+                            <li>
+                                <a href="#" class="photo"><img src="~/img/cart-3.jpg" class="cart-thumb" alt="" /></a>
+                                <h6><a href="#">Agam facilisis</a></h6>
+                                <p>2x - <span class="price">$99.99</span></p>
+                            </li>
+                            <li class="total">
+                                <span class="pull-right"><strong>Total</strong>: $0.00</span>
+                                <a href="#" class="btn btn-default btn-cart">Cart</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                    <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="~/img/logo-light.png" class="logo logo-display" alt="">
+                    <img src="~/img/logo.png" class="logo logo-scrolled" alt="">
+                </a>
+            </div>
+            <!-- End Header Navigation -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="" data-out="">
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Agency</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-agency1.html">Agency 1</a></li>
+                                    <li><a href="mp-agency2.html">Agency 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specialized</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-fashion.html">Fashion</a></li>
+                                    <li><a href="mp-education.html">Education</a></li>
+                                    <li><a href="mp-interior.html">Interior</a></li>
+                                    <li><a href="mp-car.html">Car Dealer</a></li>
+                                    <li><a href="mp-resume.html">Resume/CV</a></li>
+                                    <li><a href="mp-restaurant.html">Restaurant</a></li>
+                                    <li><a href="mp-startup2.html">Startup</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Business</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-business1.html">Business 1</a></li>
+                                    <li><a href="mp-business2.html">Business 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">General</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-general.html">General 1</a></li>
+                                    <li><a href="mp-general2.html">General 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mp-corporate1.html">Corporate</a></li>
+                            <li><a href="mp-creative2.html">Creative</a></li>
+                            <li><a href="shop-3.html">E-Commerce</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-portfolio1.html">Portfolio 1</a></li>
+                                    <li><a href="mp-portfolio2.html">Portfolio 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Photography</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="mp-photography1.html">Photography 1</a></li>
+                                    <li><a href="mp-photography2.html">Photography 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="blog-classic.html">Blog Classic</a></li>
+                                    <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                                    <li><a href="blog-single.html">Blog Standard</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mp-parallax.html">Parallax</a></li>
+                            <li><a href="mp-app-landing.html">App Landing</a></li>
+                            <li><a href="index.html#onepage">One Pages Demo</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu One</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="about-me.html">About Me</a></li>
+                                                <li><a href="about-us-1.html">About Us 1</a></li>
+                                                <li><a href="about-us-2.html">About Us 2</a></li>
+                                                <li><a href="service-1.html">Services 1</a></li>
+                                                <li><a href="service-2.html">Services 2</a></li>
+                                                <li><a href="career.html">Career</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Two</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="team-1.html">Our Team 1</a></li>
+                                                <li><a href="team-2.html">Our Team 2</a></li>
+                                                <li><a href="faq-1.html">FAQ 1</a></li>
+                                                <li><a href="faq-2.html">FAQ 2</a></li>
+                                                <li><a href="404.html">404 Error</a></li>
+                                                <li><a href="rs-demo-404-ErrorPage.html">404 Error Alt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Three</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="pricing-table-1.html">Pricing Table 1</a></li>
+                                                <li><a href="pricing-table-2.html">Pricing Table 2</a></li>
+                                                <li><a href="contact-us-1.html">Contact Us 1</a></li>
+                                                <li><a href="contact-us-2.html">Contact Us 2</a></li>
+                                                <li><a href="contact-us-3.html">Contact Us 3</a></li>
+                                                <li><a href="rs-demo-coming-soon.html">Coming Soon</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-menu col-md-3">
+                                        <h6 class="title">Title Menu Four</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="rs-demo-ComingSoon2.html">Coming Soon Alt</a></li>
+                                                <li><a href="maintenance.html">Maintenance</a></li>
+                                                <li><a href="login-1.html">Login 1</a></li>
+                                                <li><a href="login-2.html">Login/Registration 2</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Navbar</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="nav-default.html">Nav Befault</a></li>
+                                    <li><a href="nav-brand-center.html">Nav Brand Center</a></li>
+                                    <li><a href="nav-brand-center-alt.html">Nav Brand Center alt</a></li>
+                                    <li><a href="nav-brand-top.html">Nav Brand Top</a></li>
+                                    <li><a href="nav-menu-left.html">Nav Left Align</a></li>
+                                    <li><a href="nav-menu-attr.html">Nav Attr</a></li>
+                                    <li><a href="nav-full.html">Nav Fullscreen </a></li>
+                                    <li><a href="nav-sidebar.html">Nav Sidebar </a></li>
+                                    <li><a href="nav-bottom.html">Nav Bottom</a></li>
+                                    <li><a href="nav-scrollspy.html">Nav Scrollspy</a></li>
+                                    <li><a href="nav-scrollspy-sidebar.html">Nav Scrollspy Sidebar</a></li>
+                                    <li><a href="nav-transparent-with-white-border.html">Nav Trans..Border</a></li>
+                                    <li><a href="nav-transparent-dark-link.html">Nav Trans.. Dark Link</a></li>
+                                    <li><a href="nav-semi-transparent-light.html">Nav Semi Trans.. Light</a></li>
+                                    <li><a href="nav-semi-transparent-dark.html">Nav Semi Trans.. Dark</a></li>
+                                    <li><a href="nav-black.html">Navbar Black</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sliders Banner</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="sc-slider_full_screen.html">Slider Full Screen</a></li>
+                                    <li><a href="sc-slider_full_width.html">Slider Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="rs-demo-home.html">Slider Revolution</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parallax Banner</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="sc-banner_1.html">Banner 1</a></li>
+                                    <li><a href="sc-banner_2.html">Banner 2</a></li>
+                                    <li><a href="sc-banner_3.html">Banner 3</a></li>
+                                    <li><a href="sc-banner_4.html">Banner 4</a></li>
+                                    <li><a href="sc-banner_5.html">Banner 5</a></li>
+                                    <li><a href="sc-banner_6.html">Banner 6</a></li>
+                                    <li><a href="sc-banner_7.html">Banner 7</a></li>
+                                    <li><a href="sc-banner_8.html">Banner 8</a></li>
+                                    <li><a href="sc-banner_9.html">Banner 9</a></li>
+                                    <li><a href="sc-banner_10.html">Banner 10</a></li>
+                                    <li><a href="sc-banner_11.html">Banner 11</a></li>
+                                    <li><a href="sc-banner_12.html">Banner 12</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="sc-page_title.html">Page Title Variations</a></li>
+                            <li><a href="sc-footers.html">Footer Variations</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid Portfolio</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="portfolio-grid-2.html">Grid 2</a></li>
+                                    <li><a href="portfolio-grid-3.html">Grid 3</a></li>
+                                    <li><a href="portfolio-grid-4.html">Grid 4</a></li>
+                                    <li><a href="portfolio-grid-5.html">Grid 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid with Title</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="portfolio-grid-title-1.html">Grid 1</a></li>
+                                    <li><a href="portfolio-grid-title-2.html">Grid 2</a></li>
+                                    <li><a href="portfolio-grid-title-3.html">Grid 3</a></li>
+                                    <li><a href="portfolio-grid-title-4.html">Grid 4</a></li>
+                                    <li><a href="portfolio-grid-title-5.html">Grid 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masonry Portfolio</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="portfolio-masonry-2.html">Masonry 2</a></li>
+                                    <li><a href="portfolio-masonry-3.html">Masonry 3</a></li>
+                                    <li><a href="portfolio-masonry-4.html">Masonry 4</a></li>
+                                    <li><a href="portfolio-masonry-5.html">Masonry 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masonry with Title</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="portfolio-masonry-title-2.html">Masonry 2</a></li>
+                                    <li><a href="portfolio-masonry-title-3.html">Masonry 3</a></li>
+                                    <li><a href="portfolio-masonry-title-4.html">Masonry 4</a></li>
+                                    <li><a href="portfolio-masonry-title-5.html">Masonry 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio-masonry-special.html">Masonry Special</a></li>
+                            <li><a href="portfolio-masonry-special-alt.html">Masonry Special Alt</a></li>
+                            <li><a href="portfolio-details-1.html">Portfolio Details 1</a></li>
+                            <li><a href="portfolio-details-2.html">Portfolio Details 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shortcodes</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="sc-accordion.html">Accordion/Toggle</a></li>
+                                                <li><a href="sc-alerts.html">Alerts</a></li>
+                                                <li><a href="sc-blurb.html">Blurb</a></li>
+                                                <li><a href="sc-buttons.html">Buttons</a></li>
+                                                <li><a href="sc-bullets.html">Bullets</a></li>
+                                                <li><a href="sc-blogs.html">Blog Post</a></li>
+                                                <li><a href="sc-carousel.html">Carousel</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="sc-clients.html">Clients</a></li>
+                                                <li><a href="sc-custom_line_icons.html">Custom Line Icons</a></li>
+                                                <li><a href="sc-form.html">Forms</a></li>
+                                                <li><a href="sc-fun_factors.html">Fun Factors</a></li>
+                                                <li><a href="sc-heading.html">Heading</a></li>
+                                                <li><a href="sc-image_post.html">Image Post</a></li>
+                                                <li><a href="sc-parallax.html">Parallax</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                    <div class="col-menu col-md-3">
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="sc-price_tables.html">Price Tables</a></li>
+                                                <li><a href="sc-progress_bar.html">Progress Bar</a></li>
+                                                <li><a href="sc-promo.html">Promotional</a></li>
+                                                <li><a href="sc-social-links.html">Social Links</a></li>
+                                                <li><a href="sc-steps.html">Steps</a></li>
+                                                <li><a href="sc-subscribe.html">Subscriptions</a></li>
+                                                <li><a href="sc-tabs.html">Tabs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-menu col-md-3">
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                <li><a href="sc-team.html">Team Members</a></li>
+                                                <li><a href="sc-testimonials.html">Testimonials</a></li>
+                                                <li><a href="sc-timeline.html">Timeline</a></li>
+                                                <li><a href="http://bicon.lab.themebucket.net/" target=“_blank”>Line Icon Pack <small class="label label-primary"> Free</small> </a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="shop-2.html">Shop Grid 2</a></li>
+                            <li><a href="shop-3.html">Shop Grid 3</a></li>
+                            <li><a href="shop-4.html">Shop Grid 4</a></li>
+                            <li><a href="shop-single.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-left">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog-classic.html">Blog Classic 1</a></li>
+                            <li><a href="blog-classic-2.html">Blog Classic 2</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Standard</a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                    <li><a href="blog-single.html">Blog Centered</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Details </a>
+                                <ul class="dropdown-menu right">
+                                    <li><a href="blog-details-left-sidebar.html">Details Left Sidebar</a></li>
+                                    <li><a href="blog-details-right-sidebar.html">Details Right Sidebar</a></li>
+                                    <li><a href="blog-details-centered.html">Details Centered</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+
+        <!-- Start Side Menu -->
+        <div class="side">
+            <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+            <div class="widget">
+                <h5 class="title">Custom Pages</h5>
+                <ul class="link">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h5 class="title">About Us</h5>
+                <p class="light-txt">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dicta nulla odit, pariatur
+                    quas saepe similique. Accusantium, ad consectetur eius ex facere neque nobis numquam, placeat
+                    quibusdam repellendus tempora?
+                </p>
+            </div>
+            <div class="widget">
+                <h5 class="title">Social Links</h5>
+                <div class="social-links sl-default border-link round-link colored-link">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="g-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#" class="dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End Side Menu -->
+    </nav>
+    <!-- End Navigation -->
+    <div class="clearfix"></div>
+</header>
+<!--header end-->
+<!--banner start-->
+<section class="ImageBackground ImageBackground--overlay js-FullHeight js-Parallax" data-overlay="4">
+    <div class="ImageBackground__holder">
+        <img src="~/img/analog-camera.jpg" alt="...">
+    </div>
+    <div class="container u-vCenter">
+        <div class="row text-center text-white">
+            <div class="col-md-8 col-md-offset-2">
+                <img class="img-responsive" src="~/img/text-forming-design-trends--for-the-next-generation.png" alt="...">
+                <h3 class="u-MarginTop30 u-MarginBottom0 text-white u-xs-FontSize20 text-uppercase u-LetterSpacing6">for the next generation</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner end-->
+<!--about start-->
+<div class="container u-PaddingTop150 u-PaddingBottom150 u-xs-PaddingTop100 u-xs-PaddingBottom100">
+    <div class="row text-center">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 class="u-MarginTop0">Branding is what people say about you when you are not in the room</h1>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+            <p class="text-lg u-MarginTop10 u-MarginBottom80">Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets Lid est laborum dolo rumes fugats untras.</p>
+            <img class="img-responsive u-MarginAuto u-MarginBottom70" src="~/img/text-john-lenon.png" alt="..." width="200">
+            <a class="btn btn-primary u-MarginBottom10" href="#">Get Started Now</a>
+        </div>
+    </div>
+</div>
+<!--about end-->
+<!--case study 1 start-->
+<section class="bg-lighter u-PaddingTop150 u-PaddingBottom150  u-xs-PaddingTop100 u-xs-PaddingBottom50">
+    <div class="ImageBlock">
+        <div class="ImageBlock__image col-md-6 col-sm-4">
+            <div class="ImageBackground ImageBackground--overlay u-BoxShadow100" data-overlay="0">
+                <div class="ImageBackground__holder">
+                    <img src="~/img/b5-1200.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-7">
+                    <small class="u-Block text-uppercase ">Case Study</small>
+                    <div class="Split Split--height2 u-MarginTop25"></div>
+                    <h1 class="u-MarginTop20">Creative Hive</h1>
+                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips</p>
+                    <p class="u-MarginTop35 u-MarginBottom0">
+                        <a class="btn-go" href="#" role="button">Read Full Story <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--case study 1 end-->
+<!--case study 2 start-->
+<section class="u-PaddingTop150 u-PaddingBottom150  u-xs-PaddingTop100 u-xs-PaddingBottom50">
+    <div class="ImageBlock ImageBlock--switch">
+        <div class="ImageBlock__image col-md-6 col-sm-4">
+            <div class="ImageBackground ImageBackground--overlay u-BoxShadow100" data-overlay="0">
+                <div class="ImageBackground__holder">
+                    <img src="~/img/b6-1200.jpg" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-7">
+                    <small class="u-Block text-uppercase ">Case Study</small>
+                    <div class="Split Split--height2 u-MarginTop25"></div>
+                    <h1 class="u-MarginTop20">Creative Hive</h1>
+                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips</p>
+                    <p class="u-MarginTop35 u-MarginBottom0">
+                        <a class="btn-go" href="#" role="button">Read Full Story <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--case study 2 end-->
+<!--showcase start-->
+<section class="u-BoxShadow40 u-PaddingTop100 u-PaddingBottom150  u-xs-PaddingTop70 u-xs-PaddingBottom100">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                <h1 class="u-MarginBottom35">Showcase</h1>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <p class="u-LineHeight2">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets Lid est laborum dolo rumes fugats untras.</p>
+            </div>
+        </div>
+        <div class="row u-MarginTop100 u-xs-MarginTop60">
+            <div class="col-md-12">
+                <div class="js-Portfolio portfolio-grid portfolio-gallery grid-3 gutter">
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/01.jpg" class="portfolio-image popup-gallery" title="We are creative">
+                            <img src="~/img/portfolio/01.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>We are creative</h4>
+                                    <div class="portfolio-category">
+                                        <span>Mike Man</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/02.jpg" class="portfolio-image popup-gallery" title="Branding">
+                            <img src="~/img/portfolio/02.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>Branding</h4>
+                                    <div class="portfolio-category">
+                                        <span>Wallet</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/03.jpg" class="portfolio-image popup-gallery" title="Design">
+                            <img src="~/img/portfolio/03.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>Design</h4>
+                                    <div class="portfolio-category">
+                                        <span>Clock</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/04.jpg" class="portfolio-image popup-gallery" title="Photography">
+                            <img src="~/img/portfolio/04.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>Photography</h4>
+                                    <div class="portfolio-category">
+                                        <span>Cone Ice Cream</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/05.jpg" class="portfolio-image popup-gallery" title="Marketing">
+                            <img src="~/img/portfolio/05.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>Marketing</h4>
+                                    <div class="portfolio-category">
+                                        <span>Cone Ice Cream</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="~/img/portfolio/06.jpg" class="portfolio-image popup-gallery" title="Web Desgin">
+                            <img src="~/img/portfolio/06.jpg" alt="" />
+                            <div class="portfolio-hover-title">
+                                <div class="portfolio-content">
+                                    <h4>Web Design</h4>
+                                    <div class="portfolio-category">
+                                        <span>Mockup</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--showcase end-->
+<!--testimonials start-->
+<section class="u-PaddingTop100 u-PaddingBottom150 u-xs-PaddingTop70 u-xs-PaddingBottom100">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                <h1 class="u-MarginBottom35">Testimonials</h1>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <p class="u-LineHeight2">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets Lid est laborum dolo rumes fugats untras.</p>
+            </div>
+        </div>
+        <div class="row u-MarginTop100 u-xs-MarginTop60">
+            <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 u-MarginBottom75">
+                <div class="u-PaddingRight20 u-sm-Padding0">
+                    <div class="Blockquote Blockquote--borderLeft2 u-BoxShadow40">
+                        <div class="text-center u-FontSize50 u-LineHeight1 u-MarginBottom10 u-Opacity10">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="media u-OverflowVisible u-MarginTop0 u-MarginBottom45">
+                            <div class="media-left media-middle u-PaddingRight25">
+                                <div class="Thumb Thumb--92px Thumb--image Thumb--rounded">
+                                    <img class="img-responsive" src="~/img/a1.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="media-body media-middle">
+                                <p class="text-italic text-lg u-MarginBottom0">This one is a big one that has been haunting me since teenage years. When I was in highschool and beginning of University.</p>
+                            </div>
+                        </div>
+                        <div class="Blockquote__by">
+                            <span class="u-InlineBlock u-Padding10x30 bg-primary u-Rounded">
+                                <span class="h5 text-uppercase u-Weight700 u-Margin0 u-PaddingRight10">Kevin Paige</span><small>CEO - Microsot</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 u-MarginBottom75">
+                <div class="u-PaddingLeft20 u-sm-Padding0">
+                    <div class="Blockquote Blockquote--borderLeft2 u-BoxShadow40">
+                        <div class="text-center u-FontSize50 u-LineHeight1 u-MarginBottom10 u-Opacity10">
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="media u-OverflowVisible u-MarginTop0 u-MarginBottom45">
+                            <div class="media-left media-middle u-PaddingRight25">
+                                <div class="Thumb Thumb--92px Thumb--image Thumb--rounded">
+                                    <img class="img-responsive" src="~/img/a2.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="media-body media-middle">
+                                <p class="text-italic text-lg u-MarginBottom0">This one is a big one that has been haunting me since teenage years. When I was in highschool and beginning of University.</p>
+                            </div>
+                        </div>
+                        <div class="Blockquote__by">
+                            <span class="u-InlineBlock u-Padding10x30 bg-primary u-Rounded">
+                                <span class="h5 text-uppercase u-Weight700 u-Margin0 u-PaddingRight10">Kevin Paige</span><small>CEO - Microsot</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row u-MarginTop30">
+            <div class="col-md-12">
+                <a class="btn btn-default" href="#">Explore All Reviews <i class="fa fa-angle-right u-MarginLeft5" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testimonials end-->
+<!--parallax start-->
+<section class="ImageBackground ImageBackground--overlay js-Parallax" data-overlay="6">
+    <div class="ImageBackground__holder">
+        <img src="~/img/parallax2.jpg" alt="...">
+    </div>
+    <div class="container u-PaddingTop100 u-PaddingBottom100">
+        <div class="row u-PaddingTop50 u-PaddingBottom50">
+            <div class="col-md-12 text-center text-white">
+                <h1 class="u-MarginTop10">Start creating your <span class="text-uppercase u-Weight700">agency</span> website<br>right now because its alien</h1>
+                <div class="u-MarginTop60 u-xs-MarginTop30">
+                    <a class="btn btn-white btn-white--transparent u-MarginRight10 u-MarginBottom20" href="#">Know More</a>
+                    <a class="btn btn-white u-MarginBottom20" href="#">Purchase Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--parallax end-->
+<!--what we do start-->
+<section class="u-PaddingTop100 u-PaddingBottom150 u-xs-PaddingTop70 u-xs-PaddingBottom100">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <h1 class="u-MarginBottom35">What we do</h1>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <p class="u-LineHeight2">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets Lid est laborum dolo rumes fugats untras.</p>
+            </div>
+        </div>
+        <div class="row u-MarginTop100 u-xs-MarginTop60">
+            <div class="col-md-4 col-sm-6 u-MarginBottom35">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper">
+                        <img src="~/img/icons/responsive.png" alt="" height="52">
+                        <h3 class="Blurb__hoverText u-MarginTop55">Full <br>Responsive</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
+                        <p class="u-MarginTop35">
+                            <a class="btn-go" href="#" role="button">Go and take a look <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 u-MarginBottom35">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper">
+                        <img src="~/img/icons/customizable.png" alt="" height="52">
+                        <h3 class="Blurb__hoverText u-MarginTop55">High <br>Customizable</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
+                        <p class="u-MarginTop35">
+                            <a class="btn-go" href="#" role="button">Go and take a look <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 u-MarginBottom35">
+                <div class="u-BoxShadow100">
+                    <div class="Blurb Blurb--wrapper">
+                        <img src="~/img/icons/updates.png" alt="" height="52">
+                        <h3 class="Blurb__hoverText u-MarginTop55">Free <br>Updates</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
+                        <p class="u-MarginTop35">
+                            <a class="btn-go" href="#" role="button">Go and take a look <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--what we do end-->
+<!--footer start-->
+<footer class="bg-darker u-PaddingTop70">
+    <div class="container text-sm">
+        <div class="row">
+            <div class="col-md-3 u-xs-MarginBottom30">
+                <div class="logo u-MarginBottom25">
+                    <img src="~/img/logo-light.png" alt="">
+                </div>
+                <p>Alien is  fully responsible, performance oriented and SEO optimized, retina ready HTML template.</p>
+                <h5 class="u-Weight700">Alien LLC</h5>
+                <p>Street nr 100, 4536534, Chicago, US</p>
+
+                <p>
+                    T (212) 555 55 00 <br>
+                    Email: mail@example.com
+                </p>
+            </div>
+            <div class="col-md-3 u-xs-MarginBottom30">
+                <h5 class="text-uppercase u-Weight800 u-LetterSpacing2 u-MarginTop0">Follow Us</h5>
+                <ul class="light-gray-link border-bottom-link list-unstyled u-LineHeight2 u-PaddingRight40 u-xs-PaddingRight0">
+                    <li> <a href="#"><i class="fa fa-angle-right u-MarginRight10" aria-hidden="true"></i>About Us</a></li>
+                    <li> <a href="#"><i class="fa fa-angle-right u-MarginRight10" aria-hidden="true"></i>Career</a></li>
+                    <li> <a href="#"><i class="fa fa-angle-right u-MarginRight10" aria-hidden="true"></i>Terms &amp; Condition</a></li>
+                    <li> <a href="#"><i class="fa fa-angle-right u-MarginRight10" aria-hidden="true"></i>Privacy Policy</a></li>
+                    <li> <a href="#"><i class="fa fa-angle-right u-MarginRight10" aria-hidden="true"></i>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 u-xs-MarginBottom30">
+                <h5 class="text-uppercase u-Weight800 u-LetterSpacing2 u-MarginTop0">Recent Post</h5>
+                <ul class="light-gray-link list-unstyled u-MarginBottom0">
+                    <li class="u-MarginBottom15">
+                        <a class="" href="#">
+                            The ultimate guide to freelancing as a creative...
+                        </a>
+                        <p class="">24 February 2017</p>
+                    </li>
+                    <li class="u-MarginBottom15">
+                        <a class="" href="#">
+                            Searching for the best UX: search forms and boxes in web design
+                        </a>
+                        <p>19 January 2017</p>
+                    </li>
+                    <li class="u-MarginBottom15">
+                        <a class="" href="#">
+                            Top 10 free tools for frontend web development
+                        </a>
+                        <p>2 January 2017</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-uppercase u-Weight800 u-LetterSpacing2 u-MarginTop0">Subscribe</h5>
+
+                <form action="">
+                    <input class="form-control" placeholder="Enter Email" type="email">
+                </form>
+
+                <h5 class="text-uppercase u-Weight800 u-LetterSpacing2 u-MarginTop50">We are Social</h5>
+                <div class="social-links sl-default gray-border-links border-link circle-link colored-hover">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="g-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#" class="dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="text-center u-MarginTop30">
+        <div class="footer-separator"></div>
+        <p class="u-MarginBottom0 u-PaddingTop30 u-PaddingBottom30">Copyright 2017 @@ Alien Template.</p>
+    </div>
+</footer>
+<!--footer end-->
