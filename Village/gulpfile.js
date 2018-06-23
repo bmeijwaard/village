@@ -86,7 +86,7 @@ gulp.task('sass', function () {
 });
 
 // Task: Handle Javascripts
-gulp.task('javascript', function () {
+gulp.task('javascript', ['compile_typescript'], function () {
     return gulp.src(config.javascripts.source)
         // .pipe(plugins.angularFilesort()) // angularjs heeft een specifieke volgorde nodig voor compilatie. TODO indien "gewone" JS en AngularJS conflicten geven moeten deze worden gescheiden.
         .pipe(plugins.concat('appbundle.js'))
@@ -168,7 +168,8 @@ gulp.task('watch', ['browser_sync'], function () {
 // Task: Default
 // Description: Build all stuff of the project once
 gulp.task('default', ['clean'], function () {
-    return gulp.start('javascript',
+    return gulp.start(
+        'javascript',
         'sass',
         'plugins_javascript',
         'assets'
